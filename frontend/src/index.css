@@ -1,0 +1,108 @@
+/* Reset */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Card UI */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Inputs */
+input, select {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #4CAF50;
+  color: white;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* 🔥 Important */
+}
+
+th {
+  text-align: left;
+  background: #f1f3f5;
+  font-weight: 600;
+}
+
+th, td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* Fix column widths */
+th:nth-child(1), td:nth-child(1) { width: 15%; }
+th:nth-child(2), td:nth-child(2) { width: 25%; }
+th:nth-child(3), td:nth-child(3) { width: 30%; }
+th:nth-child(4), td:nth-child(4) { width: 20%; }
+th:nth-child(5), td:nth-child(5) { width: 10%; }
+
+/* Button inside table */
+td button {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+/* States */
+.empty {
+  text-align: center;
+  color: gray;
+  padding: 10px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-row input {
+  flex: 1;
+  min-width: 150px;
+}
+
+.form-row button {
+  white-space: nowrap;
+}
+
+/* Error styling */
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 2px 0 0 5px;
+}

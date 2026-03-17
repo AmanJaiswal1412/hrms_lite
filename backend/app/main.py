@@ -8,8 +8,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 origins = [
-    "http://localhost:5173",
-    "https://your-frontend.vercel.app"  # update after deployment
+    "https://hrms-lite-one-iota.vercel.app/"
 ]
 
 # CORS
